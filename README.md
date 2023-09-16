@@ -110,4 +110,54 @@
  
  * openLANE also has design space exploration which is basically used to find the best flow configuration.
 
+# openLANE Directory structure in detail
+
+
+![dirstruct](https://github.com/dishak14/pes_pd/assets/92496153/559ee677-429c-4b46-b021-9063dc7416e0)
+
+
+
+# Design Preparation Step 
+
+``` docker ```
+
+``` ./flow.tcl -interactive ``` 
+
+``` package require openlane 0.9 ```
+
+we need to do these 3 steps everytime.
+
+![openlane](https://github.com/dishak14/pes_pd/assets/92496153/faa9e0a4-ea82-41c9-ab7f-b98ad40fa15e)
+
+
+``` less config.tcl ```  this is setting of picorv32a file 
+
+![configtcl](https://github.com/dishak14/pes_pd/assets/92496153/b81d6b3f-384f-4b0c-a549-0946065b5384)
+
+``` prep -design picorv32a ```
+
+![prepdesign](https://github.com/dishak14/pes_pd/assets/92496153/a5bd2ac8-6149-4fbb-9858-f1d1669b2a3f)
+
+
+# Review files after design prep and run synthesis 
+
+* We have a new folder called runs in picrov32a, inside this run folder another folder with today's date is created.
+
+
+![todaysdate](https://github.com/dishak14/pes_pd/assets/92496153/c17c3540-884b-4f99-9df3-f04600aaafaa)
+
+* Contents inside each of the file in run folder:
+
+
+![each](https://github.com/dishak14/pes_pd/assets/92496153/402da3e5-ad56-4d58-91d9-ed233c8da7ba)
+
+* ```run_synthesis``` for running the synthesis which will take some time
+
+
+* Calculating flop ratio after running the synthesis :
+
+  
+![ffratio](https://github.com/dishak14/pes_pd/assets/92496153/6a9eeefe-b9fa-455a-a2d5-429f58b00c7b)
+
+
 
