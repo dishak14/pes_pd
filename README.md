@@ -66,4 +66,32 @@
 
 ![rtl2gds](https://github.com/dishak14/pes_asic_class/assets/92496153/f62e4831-34f5-442d-be3b-0c2b4cd61c00)
 
+* Designing a digital ASIC requires :
+  1. RTL IPs (in HDL)
+  2. EDA Tools
+  3. PDK (Process desgin kits) data
+
+ * PDK acts as an interface between FABs (manufacturing plants) and the designers.
+
+ * Synthesis is converting of the HDL design is converted to its corresponding gate lebel netlist (RTL).
+
+ * Floor Planning : it involves determining the placement of various functional blocks and components within the chip's layout to meet specific design goals and constraints.
+
+ * Power Planning : focuses on efficiently delivering power to all components and functional blocks on the integrated circuit.
+ 
+ * Macro Floor Planning :  It focuses on the high-level placement of large functional blocks, also known as macros, within the chip's layout. These macros often represent major functional units or intellectual property (IP) blocks that are pre-designed and optimized for specific functions.
+
+ * Placement : refers to the process of determining the physical locations of various components, such as logic gates, memory cells, or functional blocks, within the chip's layout. Proper placement is essential for optimizing chip performance, power consumption, and overall functionality. There are two types of placements :
+   1. Global Placement : also known as initial placement or coarse placement, is the first stage of placement in IC physical design. It focuses on determining the approximate locations of major components and functional blocks on the chip's layout without worrying about the detailed positions of individual cells.
+   2. Detailed Placement : also known as fine placement, follows global placement and focuses on refining the placement of individual cells or components within the chip's layout. It involves determining the precise coordinates and positions of each cell.
+  
+ *  Clock Tree Synthesis is used for delivering clock to all the sequential elements of the IC. We need to have minimum skew in the clock ( as 0 skew is impossible to obtain) and it is usually in a tree form ( H, X etc).
+
+ * Routing : it involves determining the paths for electrical connections (wires or traces) between the various components, such as transistors, gates, and memory cells, to establish the desired functionality of the electronic circuit. Routing is a crucial aspect of chip and PCB design, as it impacts the circuit's performance, signal integrity, and manufacturability. There are two types of routing :
+   1. Global routing : Global routing is the first step in the routing process and focuses on finding high-level routes for interconnections. It determines which layers of the chip or PCB will be used for routing and estimates the approximate paths for connections. It is basically just a routing guide.
+   2. Detailed routing :  Detailed routing follows global routing and involves specifying the exact placement of wires or traces, including their widths, spacings, and via locations. It considers detailed physical constraints and ensures compliance with design rules.
+  
+* Sign off : refers to the final approval or verification stage of the design process before it is sent for manufacturing. It is a critical step to ensure that the design meets all specifications, design rules, and requirements. DRC checking and LVS (Layout VS Scheme) is used for physical verification. Static Timing Analysis (STA) is done for timing verification.
+
+
 
