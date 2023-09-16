@@ -159,5 +159,10 @@ we need to do these 3 steps everytime.
   
 ![ffratio](https://github.com/dishak14/pes_pd/assets/92496153/6a9eeefe-b9fa-455a-a2d5-429f58b00c7b)
 
+</details>
 
+<details><summary> DAY 2 </summary>
+
+
+</details>
 
