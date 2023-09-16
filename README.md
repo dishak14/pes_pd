@@ -94,4 +94,20 @@
 * Sign off : refers to the final approval or verification stage of the design process before it is sent for manufacturing. It is a critical step to ensure that the design meets all specifications, design rules, and requirements. DRC checking and LVS (Layout VS Scheme) is used for physical verification. Static Timing Analysis (STA) is done for timing verification.
 
 
+# Introduction to openLANE and strive chipsets
+
+* OpenLANE is an open-source digital ASIC design flow and toolchain that aims to automate the process of designing and manufacturing custom silicon chips.
+
+* There is family of SoC's called as strive which is and Open PDK,Open EDA,Open RTL.
+
+![image](https://github.com/dishak14/pes_pd/assets/92496153/5ae681d6-db0e-4aa8-99f2-e610ad0c221d)
+
+* The main goal of openLANE is to produce clean GDSII flow with no human intervention and without any Layout VS Schematic ( LVS), DRC or timing voilations.
+
+* There are essentially two modes of operations :
+  1. Autonomous : also called as the push button flow which means we press a button and after a while a netlist is generated.
+  2. Interactive : we can run the commands/ steps one by one.
+ 
+ * openLANE also has design space exploration which is basically used to find the best flow configuration.
+
 
