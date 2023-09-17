@@ -233,15 +233,13 @@ we need to do these 3 steps everytime.
 
 * When the voltage droop falls below noise margin, it becomes a problem again.
 
- * The solution to this problem is that we need to give multiple power supplies.
+* The solution to this problem is that we need to give multiple power supplies.
 
    ![image](https://github.com/dishak14/pes_pd/assets/92496153/efd8f7e7-e8a1-4784-b96b-67a8a4f141c7)
 
  * A power mesh is created.
 
    ![image](https://github.com/dishak14/pes_pd/assets/92496153/475d3d98-1116-49ae-ba24-7f13d7e242e9)
-
-
 
 
 
