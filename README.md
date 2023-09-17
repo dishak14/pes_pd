@@ -242,6 +242,30 @@ we need to do these 3 steps everytime.
    ![image](https://github.com/dishak14/pes_pd/assets/92496153/475d3d98-1116-49ae-ba24-7f13d7e242e9)
 
 
+# LAB
+
+``` /Desktop/work/tools/openlane_working_dir/openlane ```
+
+``` docker```
+
+``` ./flow.tcl -interactive ```
+
+``` package require openlane 0.9 ```
+
+```prep -design picorv32a ``` this creates a new runs file in ```Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a```
+
+```run_synthesis ``` in openlane shell . This creates a new netlist in ```picorv32a/runs/synthesis```
+
+```run_floorplan``` in openlane shell.
+
+In ``` /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-09_16-02/results/floorplan``` , run the following command : ``` magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &```
+
+
+![layout](https://github.com/dishak14/pes_pd/assets/92496153/3f83afb9-50e5-4137-92f8-281039b1a9fc)
+
+
+
+
 
 
 
