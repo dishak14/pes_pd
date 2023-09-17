@@ -216,5 +216,37 @@ we need to do these 3 steps everytime.
 
 # Power Planning 
 
+* All the wires are a 16 bit bus. We cant put decoupling capacitors in between two large macros , this creates a problem of voltage drop when the distance between the power supply and the macro is large.
+
+  
+![image](https://github.com/dishak14/pes_pd/assets/92496153/451561ab-e76b-4b36-b2c4-5a0da6aad0f3)
+
+* When we say that a particular bit in a 16 bit bus is logic 1, then the capacitor of that purticular bit is charged to Vdd and when we say its logic 0 , the capacitor is discharged to 0.
+  
+![image](https://github.com/dishak14/pes_pd/assets/92496153/49422a28-2022-45bc-a1bb-c1db7349cb35)
+
+![image](https://github.com/dishak14/pes_pd/assets/92496153/392fe12e-ff5c-4070-a7d0-27bdedc03142)
+
+* When this ground bump exceeds the noise margin, it becomes logic 1 which means we will get the wrong output.
+
+  ![image](https://github.com/dishak14/pes_pd/assets/92496153/a816b54a-46d7-4237-a92a-ef70463e92dd)
+
+* When the voltage droop falls below noise margin, it becomes a problem again.
+
+ * The solution to this problem is that we need to give multiple power supplies.
+
+   ![image](https://github.com/dishak14/pes_pd/assets/92496153/efd8f7e7-e8a1-4784-b96b-67a8a4f141c7)
+
+ * A power mesh is created.
+
+   ![image](https://github.com/dishak14/pes_pd/assets/92496153/475d3d98-1116-49ae-ba24-7f13d7e242e9)
+
+
+
+
+
+
+
+
 </details>
 
