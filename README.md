@@ -163,6 +163,58 @@ we need to do these 3 steps everytime.
 
 <details><summary> DAY 2 </summary>
 
+# Utilization factor and aspect ratio
+
+* The first step in physical design flow is to define the width and the height of the die and core.
+
+* To determine the dimensions of a chip we need to focus on the dimensions of the logic gate, which is directly depended on the dimentions of the standard cells.
+
+* Put all the standard cells side by side and find the area.
+
+* Utilization factor = area occupied by netlist / total area of core
+
+* If the utilization factor = 1, then the core is completely occupied. Practically, we need 0.5/0.6 utilization factor.
+
+* Aspect ratio = height/width.
+
+* If aspect ratio = 1, it signifies the chip is a square. If it is anything other than 1, chip is a rectangle.
+
+
+# Concept of pre placed cells 
+
+* The second step in the physical design process is the placement of pre placed cells.
+
+* If we have a big circuit with a lot of logic gates, we cut the circuit into parts and implement both of them separately by extending the I/O(input/output) pins.
+
+* Thes separated circuit blocks are made into a black box which act as different IPs or modules. We can reuse these modules multiple times.
+
+* These black boxes are placed before automated placing/ routing and hence are called pre placed cells.
+
+* The remaining cells are placed onto the chip without touching the already placed pre placed cells.
+
+
+# De-Coupling Capacitors
+
+* The third step in the Physical design process is to surround the pre placed cells with decoupling capacitors.
+
+* When the input/output of any logic gate needs to change from 0 to 1 it needs to completely charge the intermediate capacitor. The voltage needed to charge the capacitor is drawn from a supply voltage.
+
+* When it changes from 1 to 0, we need to discharge the intermediate capacitor which should be handled by the ground line of the power supply.
+
+* When the charge is draw from the power supply to the logic gate circuit it is impossible to have the same voltage from the starting(Vdd) to the end destination(Vdd') of the wire due to multiple resistance, inductance etc present in the physical wire
+
+* So the switching of logic 0 to 1 cant exceed Vdd'. And if Vdd' goes below the logic 1 the output of the circuit will not be detected as logic 1.
+
+* We can solve this by adding a de coupling capacitor, parallel with the circuit.
+
+* The voltage is stored in the de-coupling capacitor and it supplies the voltage to the logic circuit.
+
+* Whenever there is a switching process, the de coupling capacitor loses its charge to the circuit and whenever there is no switching process it spends time replinishing its own charge
+
+* All the pre placed cells need to be surrounded by de coupling capacitor which takes care of the local communication between these individual modules.
+
+
+# Power Planning 
 
 </details>
 
