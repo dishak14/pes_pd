@@ -305,6 +305,23 @@ Rise transition time = time(slew_high_rise_thr) - time (slew_low_rise_thr)
 Fall transition time = time(slew_high_fall_thr) - time (slew_low_fall_thr)
 
 
+</details>
+
+<details><summary> DAY 3 </summary>
+
+# Labs for CMOS inverter ngspice simulation
+
+```git clone https://github.com/nickson-jose/vsdstdcelldesign.git```
+
+The magic software we need is in ```/Desktop/work/tools/openlane_working_dirpdks/sky130A/libs.tech/magic/``` directory.
+
+we copy it and paste it into the vsdstdcelldesign directory using ```cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign```
+
+Now we go to the vsdstdcelldesign directory and we can run magic without giving the absolute address.
+
+```magic -T sky130A.tech sky130_inv.mag &```
+
+![celldesign](https://github.com/dishak14/pes_pd/assets/92496153/28b872b9-e0a0-413d-8ee6-db6fd8ddca9e)
 
 
 
