@@ -274,6 +274,37 @@ In ``` /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/
 ![placement](https://github.com/dishak14/pes_pd/assets/92496153/a542ee78-2771-4d5c-ba35-3535d865720a)
 
 
+# Cell Design and characterization flow
+
+
+*INPUTS* ---> Process Design Kits (PDKs) ; DRC and LVS rules, SPICE models, library and user defined specs.
+
+*DESIGN STEPS* ---> Circuit design, Layout design (Art of layout Euler's path and stick diagram), Extraction of parasitics, Characterization (timing, noise, power)
+
+*OUTPUTS* ---> CDL (circuit description language), LEF, GDSII, extracted SPICE netlist (.cir), timing, noise and power .lib files
+
+
+# General Timing characterization parameters
+
+Timing defintion | Value
+------------ | -------------
+slew_low_rise_thr  | 20% value
+slew_high_rise_thr |  80% value
+slew_low_fall_thr | 20% value
+slew_high_fall_thr | 80% value
+in_rise_thr | 50% value
+in_fall_thr | 50% value
+out_rise_thr | 50% value
+out_fall_thr | 50% value
+
+
+delay =  time(out_fall_thr) - time(in_rise_thr)
+
+Rise transition time = time(slew_high_rise_thr) - time (slew_low_rise_thr)
+
+Fall transition time = time(slew_high_fall_thr) - time (slew_low_fall_thr)
+
+
 
 
 
