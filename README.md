@@ -264,6 +264,15 @@ In ``` /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/
 ![layout](https://github.com/dishak14/pes_pd/assets/92496153/3f83afb9-50e5-4137-92f8-281039b1a9fc)
 
 
+```run_placement``` in openlane shell.
+
+``` cd ../placement ``` in the terminal.
+
+```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def & ```
+
+
+![placement](https://github.com/dishak14/pes_pd/assets/92496153/a542ee78-2771-4d5c-ba35-3535d865720a)
+
 
 
 
