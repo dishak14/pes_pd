@@ -323,10 +323,15 @@ Now we go to the vsdstdcelldesign directory and we can run magic without giving 
 
 ![celldesign](https://github.com/dishak14/pes_pd/assets/92496153/28b872b9-e0a0-413d-8ee6-db6fd8ddca9e)
 
+Use the following commands in tkcon window.
+```extract all
+ext2spice cthresh 0 rethresh 0
+ext2spice```
+
+This creates a new file in vsdstadesigncell directory
 
 
-
-
+![spice](https://github.com/dishak14/pes_pd/assets/92496153/c371a8e3-b8ca-447d-b963-c16077219be7)
 
 
 </details>
