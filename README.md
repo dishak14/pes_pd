@@ -374,16 +374,95 @@ type ```drc why ``` in tkcon window
 
 
 
-
-
 </details>
 
-<details><summary> DAY 4</summary></details>
+<details><summary> DAY 4</summary>
 
 # LAB
 
- 
+Converting grid info to track info
 
+```cd Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/```
+
+``` less track.info```
+
+![tracksinfo](https://github.com/dishak14/pes_pd/assets/92496153/5955244c-5b43-4382-b6e7-61209ded978c)
+
+Track info is used during routing stage.
+
+type ```grid 0.46um 0.34um 0.23um 0.17um``` for convergence of grid and track.
+
+## Standard cell LEF generation
+
+to make an .lef file type this in the tckon terminal
+
+``` lef write ```
+
+then come back to the terminal and type 
+
+
+```less sky130_vsdinv.lef ```
+
+![lefgen](https://github.com/dishak14/pes_pd/assets/92496153/1f0c92cb-8fe9-4ba4-858c-46fa444b6c15)
+
+``` cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src ```
+
+```cp sky130_fd_sc_hd__* //home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src```
+
+![src](https://github.com/dishak14/pes_pd/assets/92496153/21ef80f2-460a-4432-bd40-e50f3c86b00a)
+
+```gedit config.tcl```
+
+![geditconfig](https://github.com/dishak14/pes_pd/assets/92496153/460ed2f1-d5c0-4963-9f15-5eeb4359491b)
+
+![idklol](https://github.com/dishak14/pes_pd/assets/92496153/8bf75ed6-b684-46f6-acfe-55e37e66357f)
+
+
+
+# Timing analysis using OpenSTA
+
+create ``` pre_sta.conf ``` in openlane directory 
+
+![preconf](https://github.com/dishak14/pes_pd/assets/92496153/50072f32-ed76-41e1-b235-1f8bcd9010ba)
+
+create ```my_base.sdc``` in openlane/designs/picorv32a/src/ directory.
+
+![mybase](https://github.com/dishak14/pes_pd/assets/92496153/3433683e-e788-4156-b8a5-0afaaf7705fd)
+
+we get the following results after doing ```sta pre_sta.conf```
+
+![cooo](https://github.com/dishak14/pes_pd/assets/92496153/49efb127-bebc-490f-8003-6e9402269104)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
 
 
 
