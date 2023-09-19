@@ -346,18 +346,48 @@ This creates a new file in vsdstadesigncell directory
 
 ![inverter](https://github.com/dishak14/pes_pd/assets/92496153/15778405-6572-491e-b748-5daff6ac2d49)
 
+ To download magic tool
 
-![drctests](https://github.com/dishak14/pes_pd/assets/92496153/d6834f1c-b8c1-47f3-8014-5c00fd15d176)
+``` wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar xfz drc_tests.tgz```
 
-![drcwhy](https://github.com/dishak14/pes_pd/assets/92496153/d4554c2e-4d84-4d00-a9b3-36d9f50fe6b3)
+``` cd drc_tests```
+
+``` ls -ltr ```
+
+![drctest1](https://github.com/dishak14/pes_pd/assets/92496153/7b46f949-2cd8-4fc6-8aa8-5d9b2f143625)
+
+In the same directory open the magic tool using
+
+```magic -d XR ```
+
+After the new magic window opens click on ```file -> open -> met1.mag ```
+
+![met1mag](https://github.com/dishak14/pes_pd/assets/92496153/b57d65aa-20ee-4fc1-b8dc-45d0abc295bb)
+
+![met1mag1](https://github.com/dishak14/pes_pd/assets/92496153/cde8f218-8b71-452a-8e51-d0224047549e)
+
+type ```drc why ``` in tkcon window
+
+![drcwhy1](https://github.com/dishak14/pes_pd/assets/92496153/2893010f-ca30-4ad3-81c2-28cd4cc5ca97)
+
+
+
+
 
 </details>
 
 <details><summary> DAY 4</summary></details>
 
-```/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130fd_sc_hd/tracks.info```
+# LAB
 
-![tracksinfo](https://github.com/dishak14/pes_pd/assets/92496153/16bfcacf-f7eb-4a75-8ec3-3467ba222198)
+ 
+
+
+
+
+
+
 
 
 
