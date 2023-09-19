@@ -337,6 +337,16 @@ This creates a new file in vsdstadesigncell directory
 
 ![spice](https://github.com/dishak14/pes_pd/assets/92496153/c371a8e3-b8ca-447d-b963-c16077219be7)
 
+![spice2](https://github.com/dishak14/pes_pd/assets/92496153/cbcfaa70-cfc3-4e99-a1c7-f5702ebb445b)
+
+
+![now](https://github.com/dishak14/pes_pd/assets/92496153/9f8373ad-11e5-4359-a328-0d14fa1de1b4)
+
+![Screenshot from 2023-09-19 06-05-49](https://github.com/dishak14/pes_pd/assets/92496153/4e2d653f-d5ba-437c-b91e-3490d8d9c9d3)
+
+
+
+
 
 </details>
 
