@@ -349,6 +349,7 @@ This creates a new file in vsdstadesigncell directory
  To download magic tool
 
 ```  wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz ```
+
 ```tar xfz drc_tests.tgz```
 
 ``` cd drc_tests```
