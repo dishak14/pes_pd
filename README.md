@@ -432,37 +432,53 @@ create ```my_base.sdc``` in openlane/designs/picorv32a/src/ directory.
 we get the following results after doing ```sta pre_sta.conf```
 
 ![cooo](https://github.com/dishak14/pes_pd/assets/92496153/49efb127-bebc-490f-8003-6e9402269104)
+</details>
 
+<details> <summary> DAY5
+</summary>
+ 
+OpenLANE uses the TritonRoute tool for routing. There are 2 stages of routing:
 
+Global routing: Routing region is divided into rectangle grids which are represented as course 3D routes (Fastroute tool)
+Detailed routing: Finer grids and routing guides used to implement physical wiring (TritonRoute tool)
+Features of TritonRoute:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Honouring pre-processed route guides
+Assumes that each net satisfies inter guide connectivity
+Uses MILP based panel routing scheme
+Intra-layer parallel and inter-layer sequential routing framework
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
